@@ -1,0 +1,9 @@
+/* Header */
+.admin-action {
+    display: flex;
+    justify-content: center;
+    padding: 10px 90px;
+
+    border-bottom: 1px solid black
+}
+

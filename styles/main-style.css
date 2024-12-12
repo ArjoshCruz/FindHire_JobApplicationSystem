@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Landing Page Section */
+.landing-page {
+    padding: 250px 0;
+    margin: auto;
+
+    max-width: 900px;
+    text-align: center;
+}
+
+.landing-page h2 {
+    text-align: center;
+    font-size: 44px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.landing-page h4 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.landing-page h4 span {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    width: 80%;
+    margin: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.search-icon {
+    font-size: 20px;
+    padding-right: 16px;
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+}
+
+
+.search-button, .create-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px;
+
+    transition: 0.25s;
+}
+
+.search-button:hover, .create-button:hover {
+    background-color: #2e7d32;
+    cursor: pointer;
+}
+
+.clear-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #cf3e33; /* Red color for contrast */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s;
+
+    margin-top: 10px;
+}
+
+.clear-button:hover {
+    background-color: #5b1111; /* Darker red for hover */
+}
+
+.create-button {
+    margin: auto;
+}
+
+
+
+/* Container */
+.container {
+    color: #66bb6a;
+    font-weight: normal;
+    font-size: 26px;
+
+    margin: 40px 0;
+    
+}
+
+.form-container {
+    width: 700px;
+    border: 2px solid #2e7d32;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    
+    margin: auto;
+    padding: 40px 50px;
+}
+
+.info-details {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 5px 0 15px;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.form-container p label {
+    font-weight: bold;
+}
+
+.submit-btn {
+    background-color: #66bb6a;
+    color: white;
+    padding: 10px 260px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+
+    margin:  auto;
+    display: block;
+}
+
+.submit-btn:hover{
+    background-color: #45a049;
+}
+
+/* Job */
+.create-job {
+    text-align: center;
+}
+.job-form {
+    background-color: #2e7d32;
+    width: 1000px;
+
+    margin: 50px auto;
+    padding: 50px;
+}
+.job-label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.job-details, .message-area {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 5px 0 15px;
+    border: 1px solid #000000;
+    font-size: 20px;
+}
+
+.job-btn {
+    width: 90%;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Job Feed */
+.job-feed {
+    background-color: #fafafa;
+    padding: 0 0 100px;
+}
+.job-feed h2 {
+    text-align: center;
+    font-size: 36px;
+
+    padding: 80px 0;
+}
+.job-post-container {
+    width: 80%;
+    
+    margin: auto;
+}
+.job-post{
+    border: 2px solid #2e7d32;
+    background-color: white;
+    font-size: 20px;
+    
+    padding: 20px;
+    margin-bottom: 30px;
+
+    position: relative;
+}
+.job-title, .view-create-job{
+    color: #3a443b;
+
+    font-size: 22px;
+}
+.job-title h3 span, .view-create-job h3 span {
+    font-weight: normal;
+    font-size: 20px;
+}
+.job-info, .view-create-job {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+
+    margin-bottom: 12px;
+}
+.job-description, .view-create-job {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.view-job {
+    position: absolute;
+    bottom:6px;
+    right: 0;
+
+}
+
+.view-job a {
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+
+    padding: 6px 14px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+/* View Job */
+.view-job-title, .applicants {
+    text-align: center;
+    margin: 40px 0 0;
+    font-size: 30px;
+}
+.view-job-info {
+    text-align: center;
+}
+.view-job-description {
+    margin: 30px 120px;
+}
+.apply-div, .message-div{
+    text-align: center;
+}
+.apply-div .apply-button {
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+    padding: 6px 14px;
+    margin: 10px auto 30px;
+    display: inline-block; /* Makes the a tag behave like a block element */
+    text-decoration: none; /* Remove underline from the link */
+    cursor: pointer; /* Makes the button clickable */
+}
+
+/* Apply Job */
+.attachment {
+    color: white;
+    font-size: 20px;
+
+    margin-top: 10px;
+}
+
+/* Applicants */
+.applicants-text {
+    margin-bottom: 40px;
+}
+
+/* Table */
+.table-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 80%;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+
+th {
+    text-align: center;
+    background-color: #66bb6a;
+    color: white;
+    text-shadow: 1px 1px 1px #000000;
+    
+    border: 2px solid black;
+
+    padding: 10px ;
+}
+
+td {
+    font-weight: 300;
+    padding: 8px;
+    
+    border: 2px solid black;
+}
+.action-td{
+    text-align: center;
+}
+.accept-btn {
+    background-color: #45a049;
+    color: white;
+}
+.reject-btn {
+    background-color: #cf3e33;
+    color: white;
+}
+.applicant-action {
+    padding: 6px 20px;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+
+    transition: 0.125s;
+}
+.accept-btn:hover {
+    background-color: #347e39;
+    color: white;
+}
+.reject-btn:hover {
+    background-color: #9b2d25;
+    color: white;
+}
+.disabled {
+    text-decoration: line-through;
+}
+.message-div {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+/* messages */
+.messages-container {
+    max-height: 600px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-area-wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.message-area {
+    width: 80%; 
+    padding: 8px 15px;
+    border: 1px solid #000000;
+    font-size: 16px;
+}
+
+.message-btn {
+    width: auto; 
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-btn:hover {
+    background-color: #2e7d32;
+}
+
+/* Sender - Receiver */
+/* Sender - Receiver */
+.main-messages-container {
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Default alignment (for receiver) */
+}
+
+/* Style for sender's messages */
+.sender {
+    background-color: #66bb6a;
+    width: 50%; /* Adjust width for proper display */
+
+    color: #000000;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    align-self: flex-end; /* Align sender messages to the right */
+    overflow-x: hidden;
+}
+
+/* Style for receiver's messages */
+.receiver {
+    background-color: #2e7d32;
+    width: 50%;
+
+    color: #000000;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    align-self: flex-start; /* Align receiver messages to the left */
+    overflow-x: hidden;
+}
+
+.sender-name {
+    font-size: 30px;
+}
+.sender-date {
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.sender-message {
+    font-weight: normal;
+}
+
+
+/* Style for sender's messages */
+.sender {
+    background-color: #66bb6a;
+    max-width: 50%; /* Adjust width for proper display */
+    width: 600px;
+    color: #000000;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    align-self: flex-end; /* Align sender messages to the right */
+}
+
+/* Style for receiver's messages */
+.receiver {
+    background-color: #2e7d32;
+    max-width: 50%;
+    width: 600px;
+    color: #000000;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: left;
+    align-self: flex-start; /* Align receiver messages to the left */
+}
+
+.sender-name {
+    font-size: 30px;
+}
+.sender-date {
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.sender-message {
+    font-weight: normal;
+}
+
+/* Job List */
+.job-list-title {
+    margin: 50px;
+}
+
+.action-td {
+    padding: 10px; 
+}
+
+.action-button {
+    display: block; 
+    width: 100%; 
+    text-align: center;
+    padding: 4px 6px; 
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.action-button.edit {
+    background-color: #4caf50;
+    transition: 0.5s;
+}
+
+.action-button.edit:hover {
+    background-color: #388e3c; 
+}
+
+.action-button.delete {
+    background-color: #cf3e33; 
+    transition: 0.5s;
+}
+
+.action-button.delete:hover {
+    background-color: #a32c26; 
+}
+
