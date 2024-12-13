@@ -1,6 +1,10 @@
 <?php 
     require_once '../../../core/handleForms.php';
     require_once '../../../core/models.php';
+    
+    if($_SESSION['user_role'] == "Employee") {
+        header("Location: ../../../index.php");
+    }
 ?>
 
 <!DOCTYPE html>
